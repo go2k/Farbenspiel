@@ -32,6 +32,7 @@ public class Fenster extends JFrame{
 
         this.add(jPanel);
 
+
     }
 
 }
