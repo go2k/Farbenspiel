@@ -4,12 +4,12 @@ import javax.swing.*;
 
 public class Fenster extends JFrame{
 
-    JButton jbtnRot;
-    JButton jbtnGruen;
-    JButton jbtnBlau;
-    JPanel jPanel;
+    private JButton jbtnRot;
+    private JButton jbtnGelb;
+    private JButton jbtnBlau;
+    private JPanel jPanel;
 
-    public void Fenster(){
+    public  Fenster(){
         this.setTitle("Farbenauswahl");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
@@ -24,8 +24,8 @@ public class Fenster extends JFrame{
         jbtnBlau.setText("Blau");
         jPanel.add(jbtnBlau);
 
-        jbtnGruen = new JButton("Grün");
-        jPanel.add(jbtnGruen);
+        jbtnGelb = new JButton("Gelb");
+        jPanel.add(jbtnGelb);
 
         jbtnRot = new JButton("Rot");
         jPanel.add(jbtnRot);
