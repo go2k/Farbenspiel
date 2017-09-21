@@ -1,6 +1,9 @@
 package com.sabel;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Fenster extends JFrame{
 
@@ -18,21 +21,40 @@ public class Fenster extends JFrame{
 
     }
 
+
     private void initComponents(){
         jPanel = new JPanel();
         jbtnBlau = new JButton();
         jbtnBlau.setText("Blau");
+        jbtnBlau.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jPanel.setBackground(Color.blue);
+            }
+        });
+
         jPanel.add(jbtnBlau);
 
         jbtnGelb = new JButton("Gelb");
+        jbtnGelb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jPanel.setBackground(Color.yellow);
+            }
+        });
         jPanel.add(jbtnGelb);
 
         jbtnRot = new JButton("Rot");
+        jbtnRot.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jPanel.setBackground(Color.red);
+            }
+        });
         jPanel.add(jbtnRot);
 
         this.add(jPanel);
-
-
     }
+
 
 }
