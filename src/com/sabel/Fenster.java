@@ -16,8 +16,16 @@ public class Fenster extends JFrame {
         this.setTitle("Farbenauswahl");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
+        initEvents();
         this.setSize(300, 300);
         this.setVisible(true);
+    }
+
+    private void initEvents() {
+        MeinActionListener mal = new MeinActionListener(jPanel);
+        jbtnRot.addActionListener(mal);
+        jbtnGelb.addActionListener(mal);
+        jbtnBlau.addActionListener(mal);
     }
 
     private void initComponents() {
