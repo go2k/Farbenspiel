@@ -57,8 +57,6 @@ public class Fenster extends JFrame {
         jPanel.add(jbtnRot);
 
         this.add(jPanel);
-
-
     }
 
 }
