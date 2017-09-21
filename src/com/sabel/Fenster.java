@@ -30,8 +30,7 @@ public class Fenster extends JFrame {
     }
     private void initComponents() {
         jPanel = new JPanel();
-        jbtnBlau = new JButton();
-        jbtnBlau.setText("Blau");
+        jbtnBlau = new JButton("Blau");
         jPanel.add(jbtnBlau);
         jbtnGelb = new JButton("Gelb");
         jPanel.add(jbtnGelb);
@@ -41,12 +40,9 @@ public class Fenster extends JFrame {
     }
 
     public class MeinInnererActionListener implements ActionListener {
-
         @Override
         public void actionPerformed(ActionEvent e) {
-
             System.out.println(e.getActionCommand());
-
             switch (e.getActionCommand()) {
                 case "Rot":
                     jPanel.setBackground(Color.RED);
@@ -58,7 +54,6 @@ public class Fenster extends JFrame {
                     jPanel.setBackground(Color.BLUE);
                     break;
             }
-
         }
     }
 }
