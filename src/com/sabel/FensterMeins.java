@@ -22,6 +22,7 @@ public class FensterMeins extends JFrame{
     }
 
 
+
     private void initComponents(){
         jPanel = new JPanel();
         jbtnBlau = new JButton();
